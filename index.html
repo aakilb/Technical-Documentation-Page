@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+  <header>
+    <h1 style="text-align: center; font-size: 2em;">C# Documentation</h1>
+  </header>
+  <ul>
+    <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+    <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+    <li><a href="#Syntax" class="nav-link">Syntax</a></li>
+    <li><a href="#Variables" class="nav-link">Variables</a></li>
+    <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+    <li><a href="#Reference" class="nav-link">Reference</a></li>
+  </ul>
+</nav>
+<div class="container">
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header><h2>Introduction</h2></header>
+      <p>C# is pronounced "C-Sharp".</p>
+      <p>It is an object-oriented programming language created by Microsoft that runs on the .NET Framework.</p>
+      <p>C# has roots from the C family, and the language is close to other popular languages like C++ and Java.</p>
+      <p>The first version was released in year 2002. The latest version, C# 8, was released in September 2019.</p>
+      <p>C# is used for:</p>
+      <ul>
+        <li>Mobile Applications</li>
+        <li>Desktop Applications</li>
+        <li>Web Applications</li>
+        <li>Web Services</li>
+        <li>Web sites</li>
+        <li>Games</li>
+        <li>VR</li>
+        <li>Database applications</li>
+        <li>And much, much more!</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Hello_World">
+      <header><h2>Hello World</h2></header>
+      <p>The code for your first program i.e. "Hello World! program", should look something like this:</p>
+      <div class="code-block">
+        <pre>
+          <code>
+  1   using System; 
+  2
+  3   namespace HelloWorld
+  4   {
+  5     class Program
+  6     {
+  7       static void Main(string[] args)
+  8       {
+  9         Console.WriteLine("Hello World!");    
+ 10       }
+ 11     }
+ 12   }
+          </code>
+        </pre>
+      </div>
+    </section>
+    <section class="main-section" id="Syntax">
+      <header><h2>Syntax</h2></header>
+      <p>What follows is the explanation of the syntax used in the Hello World program:</p>
+      <p><b>Line 1: </b><code>Using System</code> means that we can use classes from the <code>System</code> namespace.</p>
+      <p><b>Line 2: </b>A blank line. C# ignores white space. However, multiple lines makes the code more readable.</p>
+      <p><b>Line 3: </b><code>namespace</code> is used to organize your code, and it is a container for classes and other namespaces.</p>
+      <p><b>Line 4: </b>The curly braces <code>{}</code>marks the beginning and the end of a block of code.</p> 
+      <p><b>Line 5: </b><code>class</code> is a container for data and methods, which brings functionality to your program. Every line of code that runs in C# must be inside a class. In our example, we named the class Program.</p>
+      <p><b>Line 7: </b>Another thing that always appear in a C# program, is the <code>Main</code> method. Any code inside its curly brackets <code>{}</code> will be executed.</p>
+      <p><b>Line 9: </b><code>Console</code> is a class of the <code>System</code> namespace, which has a <code>WriteLine()</code> method that is used to output/print text. In our example it will output "Hello World!".</p>
+    </section>
+    <section class="main-section" id="Variables">
+      <header><h2>Variables</h2></header>
+      <p>Variables are containers for storing data values.</p>
+      <ul>
+        <li><code>int</code> - stores integers (whole numbers), without decimals, such as 123 or -123</li>
+        <li><code>double</code> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+        <li><code>char</code> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes</li>
+        <li><code>string</code> - stores text, such as "Hello World". String values are surrounded by double quotes</li>
+        <li><code>bool</code> - stores values with two states: true or false</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Data_Types">
+      <header><h2>Data Types</h2></header>
+      <p>The most common data types are as follows:</p>
+      <table>
+        <tr>
+          <th>Data Type</th>
+          <th>Size</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>int</td>
+          <td>4 bytes</td>
+          <td>Stores whole numbers from -2,147,483,648 to 2,147,483,647</td>
+        </tr>
+        <tr>
+          <td>long</td>
+          <td>8 bytes</td>
+          <td>Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+        </tr>
+        <tr>
+          <td>float</td>
+          <td>4 bytes</td>
+          <td>Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits</td>
+        </tr>
+        <tr>
+          <td>double</td>
+          <td>8 bytes</td>
+          <td>Stores fractional numbers. Sufficient for storing 15 decimal digits</td>
+        </tr>
+        <tr>
+          <td>bool</td>
+          <td>1 bit</td>
+          <td>Stores true or false values</td>
+        </tr>
+        <tr>
+          <td>char</td>
+          <td>2 bytes</td>
+          <td>Stores a single character/letter, surrounded by single quotes</td>
+        </tr>
+        <tr>
+          <td>string</td>
+          <td>2 bytes per character</td>
+          <td>Stores a sequence of characters, surrounded by double quotes</td>
+        </tr>
+      </table>
+    </section>
+    <section class="main-section" id="Reference">
+      <header><h2>Reference</h2></header>
+      <p>All of the documentation in this page is taken from <a href="https://www.w3schools.com/cs/index.php" target="_blank">w3schools</a></p>
+    </section>
+  </main>
+</div>
+</body>
+</html>
